@@ -998,6 +998,18 @@ body {
     }
 }
 
+/* Large screens - ensure proper spacing */
+@media (min-width: 1200px) {
+    .hero-content {
+        margin-top: 100px; /* More space on large screens */
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-5xl);
+        line-height: 1.1;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
