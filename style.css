@@ -1008,8 +1008,14 @@ body {
         display: flex;
     }
     
+    .hero-content {
+        margin-top: 60px; /* Less margin on mobile */
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
     .hero-title {
-        font-size: var(--font-size-4xl);
+        font-size: var(--font-size-3xl);
+        line-height: 1.3;
     }
     
     .hero-stats {
