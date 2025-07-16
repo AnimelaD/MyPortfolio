@@ -339,10 +339,16 @@ body {
 .section {
     padding: var(--spacing-3xl) 0;
     position: relative;
+    z-index: 1;
 }
 
 .section:nth-child(even) {
     background: var(--bg-secondary);
+}
+
+/* Add scroll margin to account for fixed navbar */
+.section[id] {
+    scroll-margin-top: 100px; /* Adjust based on navbar height */
 }
 
 .section-header {
