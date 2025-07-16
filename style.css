@@ -222,11 +222,11 @@ body {
 }
 
 .hero-title {
-    font-size: var(--font-size-5xl);
+    font-size: var(--font-size-4xl);
     font-weight: 900;
     margin-bottom: var(--spacing-lg);
     color: var(--text-white);
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .hero-name {
