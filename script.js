@@ -2,16 +2,19 @@ console.log('Portfolio site script loaded.');
 
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
-    // Navigation smooth scrolling
+    // Navigation smooth scrolling with navbar offset
     document.querySelectorAll('.nav-link').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetElement.offsetTop - navbarHeight - 20; // 20px extra padding
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
                 });
             }
         });
