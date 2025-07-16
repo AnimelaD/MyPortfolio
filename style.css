@@ -1071,12 +1071,18 @@ body {
         padding: 0 var(--spacing-md);
     }
     
+    .hero-content {
+        margin-top: 40px; /* Even less margin on small mobile */
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+    
     .hero-title {
-        font-size: var(--font-size-3xl);
+        font-size: var(--font-size-2xl);
+        line-height: 1.4;
     }
     
     .hero-subtitle {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-lg);
     }
     
     .stat-card {
